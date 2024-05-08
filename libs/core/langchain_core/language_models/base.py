@@ -48,6 +48,7 @@ def get_tokenizer() -> Any:
             "Please install it with `pip install transformers`."
         )
     # create a GPT-2 tokenizer instance
+    # this needs to be changed for different LLMS
     return GPT2TokenizerFast.from_pretrained("gpt2")
 
 
